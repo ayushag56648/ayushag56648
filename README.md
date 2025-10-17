@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=BBH+Sans+Bogle&size=24&pause=700&color=00D9FF&center=true&vCenter=true&width=500&lines=Hi!+I'm+Ayush+%F0%9F%91%8B;Linux+Power+User+%F0%9F%90%A7;Network+Engineer+in+Making+%F0%9F%8C%90;Terminal+%3E+GUI+%E2%9A%A1;Bash+Scripting+%7C+Python+%7C+C%2B%2B;Cybersecurity+Enthusiast+%F0%9F%94%90;Open+Source+Contributor+%E2%AD%90" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&size=24&pause=700&color=00D9FF&center=true&vCenter=true&width=500&lines=Hi!+I'm+Ayush+%F0%9F%91%8B;Linux+Power+User+%F0%9F%90%A7;Network+Engineer+in+Making+%F0%9F%8C%90;Terminal+%3E+GUI+%E2%9A%A1;Bash+Scripting+%7C+Python+%7C+C%2B%2B;Cybersecurity+Enthusiast+%F0%9F%94%90;Open+Source+Contributor+%E2%AD%90" alt="Typing SVG" />
 </div>
 # Hi there! 👋 I'm Ayush
 
