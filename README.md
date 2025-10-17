@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Hi+%F0%9F%91%8B+I'm+Ayush;CSE+Student;Full+Stack+Developer;Always+Learning+New+Things;Open+to+Collaboration!" alt="Typing SVG" />
+</div>
 # Hi there! 👋 I'm Ayush
 
 ## 💻 Tech Stack:
