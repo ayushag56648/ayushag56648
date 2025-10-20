@@ -1,5 +1,8 @@
 ![Banner](./banner.svg)
-# Hi there! 👋 I'm Ayush
+#I’m Ayush, a Computer Science Engineering student specializing in Cybersecurity at SRM Institute of Science and Technology (Kattankulathur).
+💻 I’m passionate about Linux, Networking, and DevOps, and I enjoy exploring how systems work behind the scenes.
+🚀 I love solving problems, writing clean code, and continuously learning new technologies to grow as a cybersecurity and cloud professional.
+📚 Currently learning Red Hat (RHCSA), Python, and C programming.
 
 ## 💻 Tech Stack:
 
