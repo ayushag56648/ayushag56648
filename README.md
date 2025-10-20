@@ -1,4 +1,4 @@
-
+![Banner](./banner.svg)
 # Hi there! 👋 I'm Ayush
 
 ## 💻 Tech Stack:
