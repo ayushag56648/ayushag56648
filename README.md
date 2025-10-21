@@ -41,11 +41,16 @@ I’m Ayush, a Computer Science Engineering student specializing in Cybersecurit
 
 ---
 
-### 🌐 Connect with me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](www.linkedin.com/in/ayushanandgeorge
+## 🌐 Connect With Me
+
+<p align="center">
+<a href="https://www.linkedin.com/in/ayushanandgeorge"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:ayushanandgeorge12@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/ayushag56648"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+</p>
 
 )
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/your-profile)
+
 
 ---
 ⭐️ From [ayushag56648](https://github.com/ayushag56648)
