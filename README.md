@@ -1,8 +1,13 @@
 ![Banner](./banner.svg)
-I’m Ayush, a Computer Science Engineering student specializing in Cybersecurity at  SRM Institute of Science and Technology (Kattankulathur).
-💻 I’m passionate about Linux, Networking, and DevOps, and I enjoy exploring how systems work behind the scenes.
-🚀 I love solving problems, writing clean code, and continuously learning new technologies to grow as a cybersecurity and cloud professional.
-📚 Currently learning Red Hat (RHCSA), Python, and C programming.
+👋 Hey, I'm Ayush
+
+Security-focused CS undergrad at SRM Institute of Science and Technology · Building at the intersection of cybersecurity and cloud infrastructure
+
+🎓 B.Tech CSE — Cybersecurity
+📍 Chennai / Kuwait
+🎯 Graduating 2028
+About
+I'm a computer science student specialising in cybersecurity, with a strong foundation in Linux, networking, and Python. My interest lies in security engineering — building tools and systems that protect infrastructure, rather than just operating them. I enjoy working on real problems, writing clean code, and understanding how things break.
 
 ## 💻 Tech Stack
 
