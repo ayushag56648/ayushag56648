@@ -9,8 +9,7 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=ayushag56648&style=flat-square&color=00E5FF&label=PROFILE+VIEWS" />
-<img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20INTERNSHIPS-00FF9D?style=flat-square&labelColor=0D1117" />
+
 
 </div>
 
@@ -18,28 +17,25 @@
 
 <br/>
 
-## 👋 whoami
+👋 Hey, I'm Ayush
 
-```yaml
-name: Ayush
-role: Cybersecurity Enthusiast & CS Undergrad
-university: SRM Institute of Science and Technology
-program: B.Tech CSE — Cybersecurity
-graduation: 2028
-location: Chennai / Kuwait
-focus:
-  - Cybersecurity
-  - Cloud Infrastructure
-summary: >
-  Computer science student specializing in cybersecurity, with a strong
-  foundation in Linux, networking, and Python. Focused on security
-  engineering — building tools and systems that protect infrastructure,
-  not just operate it. Enjoys solving real problems, writing clean code,
-  and understanding how things break.
-```
+Security-focused CS undergrad at SRM Institute of Science and Technology — building at the intersection of cybersecurity and cloud infrastructure.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,22&height=3&section=footer" width="100%"/>
+<table>
+<tr>
+<td width="50%" valign="top">
+🎓 B.Tech CSE — Cybersecurity
+📍 Chennai / Kuwait
+🎯 Graduating 2028
 
+</td>
+<td width="50%" valign="top">
+I'm a computer science student specializing in cybersecurity, with a strong foundation in Linux, networking, and Python. My focus is security engineering — building tools and systems that protect infrastructure, not just operate it. I enjoy solving real problems, writing clean code, and understanding how things break.
+
+</td>
+</tr>
+</table>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3&section=footer" width="100%"/>
 <br/>
 
 ## 💻 Tech Stack
@@ -93,26 +89,21 @@ summary: >
 
 <br/>
 
-## 🌐 Connect With Me
+🌐 Connect With Me
 
 <div align="center">
-
-<a href="https://linkedin.com/in/YOUR-LINKEDIN-HANDLE">
-  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00E5FF" />
+<a href="https://linkedin.com/in/ayushanandgeorge">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="mailto:YOUR-EMAIL@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=00E5FF" />
+<a href="mailto:ayush.ag56648@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://github.com/ayushag56648">
-  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00E5FF" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-
 </div>
-
 <br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:12181A,100:0D1117&height=100&section=footer" width="100%"/>
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
 <div align="center">
 <sub>⭐ From <a href="https://github.com/ayushag56648">ayushag56648</a></sub>
 </div>
