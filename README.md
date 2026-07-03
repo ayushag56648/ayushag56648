@@ -44,9 +44,9 @@ I'm a computer science student specializing in cybersecurity, with a strong foun
 
 | Category | Stack |
 |:---|:---|
-| **Languages** | ![Python](https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00FF9D) ![Java](https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=00FF9D) ![C](https://img.shields.io/badge/C-0D1117?style=for-the-badge&logo=c&logoColor=00FF9D) ![C++](https://img.shields.io/badge/C++-0D1117?style=for-the-badge&logo=cplusplus&logoColor=00FF9D) ![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=00FF9D) ![HTML5](https://img.shields.io/badge/HTML5-0D1117?style=for-the-badge&logo=html5&logoColor=00FF9D) ![Bash](https://img.shields.io/badge/Bash-0D1117?style=for-the-badge&logo=gnubash&logoColor=00FF9D) |
-| **Operating Systems & Linux** | ![Linux](https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=00E5FF) ![Red Hat](https://img.shields.io/badge/Red%20Hat-0D1117?style=for-the-badge&logo=redhat&logoColor=00E5FF) ![Ubuntu](https://img.shields.io/badge/Ubuntu-0D1117?style=for-the-badge&logo=ubuntu&logoColor=00E5FF) |
-| **Databases** | ![MySQL](https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=00E5FF) |
+| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white) |
+| **Operating Systems & Linux** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) |
+| **Databases** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) |
 
 </div>
 
@@ -68,28 +68,19 @@ I'm a computer science student specializing in cybersecurity, with a strong foun
 
 <!--
   ANIMATED CONTRIBUTION SNAKE
-  This one needs a one-time setup: add the included snake.yml to
-  .github/workflows/ in your profile repo. It runs automatically and
-  generates the SVG below by "eating" your contribution graph.
 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ayushag56648/ayushag56648/output/github-contribution-grid-snake-dark.svg" />
   <img alt="contribution snake animation" src="https://raw.githubusercontent.com/ayushag56648/ayushag56648/output/github-contribution-grid-snake.svg" width="100%" />
 </picture>
 
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=ayushag56648&theme=onedark&no-frame=true&column=6&row=1&margin-w=8&margin-h=8" />
-
 </div>
-
-<sub align="center">Live data — updates automatically on every visit.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,18,22&height=3&section=footer" width="100%"/>
 
 <br/>
 
-🌐 Connect With Me
+### 🌐 Connect With Me
 
 <div align="center">
 <a href="https://linkedin.com/in/ayushanandgeorge">
@@ -102,8 +93,11 @@ I'm a computer science student specializing in cybersecurity, with a strong foun
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 </div>
+
 <br/>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
+
 <div align="center">
 <sub>⭐ From <a href="https://github.com/ayushag56648">ayushag56648</a></sub>
 </div>
