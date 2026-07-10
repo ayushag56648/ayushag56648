@@ -1,153 +1,193 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 620" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 600" width="100%" height="100%">
   <defs>
-    <!-- Core Background -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070a0e" />
+    <!-- Deep Cybersecurity Charcoal Background -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A0F" />
       <stop offset="100%" stop-color="#0D1117" />
     </linearGradient>
 
-    <!-- Glass Panel Gradient -->
-    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.05)" />
+    <!-- Frosted Glass Effect Gradient -->
+    <linearGradient id="glass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
       <stop offset="100%" stop-color="rgba(255, 255, 255, 0.01)" />
     </linearGradient>
 
-    <!-- Holographic Line Gradient -->
-    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(0, 229, 255, 0.5)" />
-      <stop offset="50%" stop-color="rgba(99, 102, 241, 0.5)" />
-      <stop offset="100%" stop-color="rgba(0, 255, 157, 0.5)" />
+    <!-- Holographic Cyan/Purple Connection Line -->
+    <linearGradient id="holo-line" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0, 229, 255, 0.6)" />
+      <stop offset="100%" stop-color="rgba(157, 78, 221, 0.6)" />
     </linearGradient>
 
-    <!-- Vertical Radar Scan Line -->
-    <linearGradient id="scanline" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="rgba(0, 229, 255, 0)" />
-      <stop offset="50%" stop-color="rgba(0, 229, 255, 0.15)" />
-      <stop offset="100%" stop-color="rgba(0, 229, 255, 0)" />
-    </linearGradient>
+    <!-- Soft Glow Filter for the Central Core -->
+    <filter id="core-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
 
     <style>
-      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; fill: #ffffff; font-size: 14px; letter-spacing: 2px; }
-      .tech-name { font-family: monospace; font-weight: 600; fill: #00E5FF; font-size: 13px; }
-      .tech-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; fill: #8b949e; font-size: 12px; }
-      .module-border { fill: url(#glass); stroke: rgba(255,255,255,0.1); stroke-width: 1; }
+      .node-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #E6EDF3; }
+      .core-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; fill: #FFFFFF; letter-spacing: 1px; }
+      .glass-pill { fill: url(#glass-grad); stroke: rgba(255, 255, 255, 0.12); stroke-width: 1.5; }
+      .holo-connection { fill: none; stroke: url(#holo-line); stroke-width: 1.5; stroke-dasharray: 4 6; }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="url(#bg)" />
+  <!-- Base Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
 
-  <!-- Animated Ambient Glows -->
-  <circle cx="150" cy="150" r="100" fill="rgba(99, 102, 241, 0.15)" filter="blur(40px)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="700" cy="450" r="120" fill="rgba(0, 229, 255, 0.1)" filter="blur(50px)">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="8s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Ambient Background Nebulas (Depth) -->
+  <circle cx="425" cy="300" r="250" fill="rgba(0, 229, 255, 0.03)" filter="blur(60px)" />
+  <circle cx="200" cy="150" r="150" fill="rgba(157, 78, 221, 0.04)" filter="blur(50px)" />
+  <circle cx="650" cy="450" r="180" fill="rgba(0, 255, 157, 0.03)" filter="blur(50px)" />
 
-  <!-- Animated Network Connection Lines Behind Glass -->
-  <path d="M 225 125 L 425 300 L 625 125 M 225 475 L 425 300 L 625 475" fill="none" stroke="url(#line-glow)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.3">
-    <animate attributeName="stroke-dashoffset" values="100;0" dur="20s" repeatCount="indefinite" />
-  </path>
-
-  <!-- Animated Scan Line -->
-  <rect width="100%" height="150" fill="url(#scanline)" opacity="0.5">
-    <animate attributeName="y" values="-150;700;-150" dur="10s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- ==================== MODULE 1: LANGUAGES ==================== -->
-  <g transform="translate(40, 40)">
-    <!-- Floating Animation -->
-    <animateTransform attributeName="transform" type="translate" values="40,40; 40,35; 40,40" dur="5s" repeatCount="indefinite" />
-    <rect width="365" height="155" rx="12" class="module-border" />
-    
-    <!-- Status Dot -->
-    <circle cx="25" cy="25" r="4" fill="#00FF9D">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">PROGRAMMING</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-
-    <text x="25" y="75"><tspan class="tech-name">Python</tspan> <tspan class="tech-desc">— Automation &amp; Sec Scripts</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name">Bash  </tspan> <tspan class="tech-desc">— Core System Scripting</tspan></text>
-    <text x="25" y="135"><tspan class="tech-name">C/C++ </tspan> <tspan class="tech-desc">— Low-level Logic &amp; Memory</tspan></text>
+  <!-- Tiny Floating Ambient Particles -->
+  <g fill="rgba(255, 255, 255, 0.5)">
+    <circle cx="150" cy="200" r="1.5"><animateTransform attributeName="transform" type="translate" values="0,0; -15,-30; 0,0" dur="10s" repeatCount="indefinite" /></circle>
+    <circle cx="700" cy="150" r="2.0"><animateTransform attributeName="transform" type="translate" values="0,0; 20,20; 0,0" dur="12s" repeatCount="indefinite" /></circle>
+    <circle cx="250" cy="500" r="1.5"><animateTransform attributeName="transform" type="translate" values="0,0; 10,-25; 0,0" dur="14s" repeatCount="indefinite" /></circle>
+    <circle cx="650" cy="350" r="1.0"><animateTransform attributeName="transform" type="translate" values="0,0; -20,-10; 0,0" dur="9s" repeatCount="indefinite" /></circle>
   </g>
 
-  <!-- ==================== MODULE 2: OS & LINUX ==================== -->
-  <g transform="translate(445, 40)">
-    <animateTransform attributeName="transform" type="translate" values="445,40; 445,45; 445,40" dur="6s" repeatCount="indefinite" />
-    <rect width="365" height="155" rx="12" class="module-border" />
+  <!-- ========================================== -->
+  <!-- HOLOGRAPHIC NETWORK LINES (Rendered Below) -->
+  <!-- ========================================== -->
+  <g class="holo-connection">
+    <!-- Core to Inner Diamond -->
+    <line x1="425" y1="300" x2="425" y2="140"><animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" begin="0s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="300" x2="425" y2="460"><animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" begin="1s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="300" x2="250" y2="300"><animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" begin="2s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="300" x2="600" y2="300"><animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="4s" begin="3s" repeatCount="indefinite"/></line>
     
-    <circle cx="25" cy="25" r="4" fill="#6366F1">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">SYSTEMS &amp; OS</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-
-    <text x="25" y="75"><tspan class="tech-name" fill="#ff5f56">Red Hat</tspan> <tspan class="tech-desc">— RHCSA Certified Admin</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name" fill="#FCC624">Linux  </tspan> <tspan class="tech-desc">— Daily Dev Environment</tspan></text>
-    <text x="25" y="135"><tspan class="tech-name" fill="#E95420">Ubuntu </tspan> <tspan class="tech-desc">— Server &amp; Cloud Operations</tspan></text>
+    <!-- Inner Diamond to Outer Mesh -->
+    <line x1="250" y1="300" x2="80" y2="300"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="0.5s" repeatCount="indefinite"/></line>
+    <line x1="250" y1="300" x2="230" y2="130"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="1.5s" repeatCount="indefinite"/></line>
+    <line x1="250" y1="300" x2="230" y2="470"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="2.5s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="140" x2="230" y2="130"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="3.5s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="140" x2="620" y2="130"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="4.5s" repeatCount="indefinite"/></line>
+    <line x1="600" y1="300" x2="770" y2="300"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="0.2s" repeatCount="indefinite"/></line>
+    <line x1="600" y1="300" x2="620" y2="130"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="1.2s" repeatCount="indefinite"/></line>
+    <line x1="600" y1="300" x2="620" y2="470"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="2.2s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="460" x2="230" y2="470"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="3.2s" repeatCount="indefinite"/></line>
+    <line x1="425" y1="460" x2="620" y2="470"><animate attributeName="opacity" values="0.05; 0.5; 0.05" dur="5s" begin="4.2s" repeatCount="indefinite"/></line>
   </g>
 
-  <!-- ==================== MODULE 3: NETWORKING ==================== -->
-  <g transform="translate(40, 235)">
-    <animateTransform attributeName="transform" type="translate" values="40,235; 40,240; 40,235" dur="5.5s" repeatCount="indefinite" />
-    <rect width="365" height="155" rx="12" class="module-border" />
-    
-    <circle cx="25" cy="25" r="4" fill="#00E5FF">
-      <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">NETWORKING</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+  <!-- ========================================== -->
+  <!-- FLOATING ORBITAL GLASS PILLS               -->
+  <!-- ========================================== -->
 
-    <text x="25" y="75"><tspan class="tech-name">Fortinet </tspan> <tspan class="tech-desc">— Firewalls &amp; NSE Framework</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name">Wireshark</tspan> <tspan class="tech-desc">— Packet &amp; Traffic Analysis</tspan></text>
-    <text x="25" y="135"><tspan class="tech-name">TCP/IP   </tspan> <tspan class="tech-desc">— Protocol Infrastructure</tspan></text>
+  <!-- Outer Ring: C -->
+  <g transform="translate(165, 107)">
+    <animateTransform attributeName="transform" type="translate" values="165,107; 165,101; 165,107" dur="4.2s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="-1 65 23; 1 65 23; -1 65 23" dur="7s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(168, 185, 204, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/c/A8B9CC" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">C</text>
   </g>
 
-  <!-- ==================== MODULE 4: SECURITY TOOLS ==================== -->
-  <g transform="translate(445, 235)">
-    <animateTransform attributeName="transform" type="translate" values="445,235; 445,230; 445,235" dur="6.5s" repeatCount="indefinite" />
-    <rect width="365" height="155" rx="12" class="module-border" />
-    
-    <circle cx="25" cy="25" r="4" fill="#ff5f56">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">SECURITY TOOLING</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-
-    <text x="25" y="75"><tspan class="tech-name">Zero-Trust</tspan> <tspan class="tech-desc">— Architecture &amp; Identity</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name">AppSec    </tspan> <tspan class="tech-desc">— Static Analysis &amp; Scanning</tspan></text>
-    <text x="25" y="135"><tspan class="tech-name">API Sec   </tspan> <tspan class="tech-desc">— Endpoint Hardening</tspan></text>
+  <!-- Outer Ring: C++ -->
+  <g transform="translate(555, 107)">
+    <animateTransform attributeName="transform" type="translate" values="555,107; 555,113; 555,107" dur="5.1s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="1 65 23; -1 65 23; 1 65 23" dur="6.5s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(0, 89, 156, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/cplusplus/00599C" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">C++</text>
   </g>
 
-  <!-- ==================== MODULE 5: DATABASES ==================== -->
-  <g transform="translate(40, 430)">
-    <animateTransform attributeName="transform" type="translate" values="40,430; 40,425; 40,430" dur="4.5s" repeatCount="indefinite" />
-    <rect width="365" height="140" rx="12" class="module-border" />
-    
-    <circle cx="25" cy="25" r="4" fill="#FCC624">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">DATABASES</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-
-    <text x="25" y="75"><tspan class="tech-name">MySQL   </tspan> <tspan class="tech-desc">— Relational Architecture</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name">NoSQL   </tspan> <tspan class="tech-desc">— Document-based Storage</tspan></text>
+  <!-- Outer Ring: MySQL -->
+  <g transform="translate(165, 447)">
+    <animateTransform attributeName="transform" type="translate" values="165,447; 165,440; 165,447" dur="4.8s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="-1.5 65 23; 1.5 65 23; -1.5 65 23" dur="8s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(68, 121, 161, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/mysql/4479A1" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">MySQL</text>
   </g>
 
-  <!-- ==================== MODULE 6: LEARNING ==================== -->
-  <g transform="translate(445, 430)">
-    <animateTransform attributeName="transform" type="translate" values="445,430; 445,435; 445,430" dur="5.2s" repeatCount="indefinite" />
-    <rect width="365" height="140" rx="12" class="module-border" />
-    
-    <circle cx="25" cy="25" r="4" fill="#00FF9D">
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <text x="40" y="30" class="title">CURRENTLY EXPANDING</text>
-    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-
-    <text x="25" y="75"><tspan class="tech-name">Cloud Sec</tspan> <tspan class="tech-desc">— AWS/Azure Infrastructure</tspan></text>
-    <text x="25" y="105"><tspan class="tech-name">Next.js  </tspan> <tspan class="tech-desc">— Secure Web Applications</tspan></text>
+  <!-- Outer Ring: Java -->
+  <g transform="translate(555, 447)">
+    <animateTransform attributeName="transform" type="translate" values="555,447; 555,454; 555,447" dur="5.5s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="1.5 65 23; -1.5 65 23; 1.5 65 23" dur="7.2s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(237, 139, 0, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/openjdk/ED8B00" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">Java</text>
   </g>
+
+  <!-- Far Left: HTML5 -->
+  <g transform="translate(15, 277)">
+    <animateTransform attributeName="transform" type="translate" values="15,277; 15,270; 15,277" dur="6.1s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="-1 65 23; 1 65 23; -1 65 23" dur="9s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(227, 79, 38, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/html5/E34F26" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">HTML5</text>
+  </g>
+
+  <!-- Far Right: JavaScript -->
+  <g transform="translate(705, 277)">
+    <animateTransform attributeName="transform" type="translate" values="705,277; 705,284; 705,277" dur="5.8s" repeatCount="indefinite" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" values="1 65 23; -1 65 23; 1 65 23" dur="8.5s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(247, 223, 30, 0.05)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/javascript/F7DF1E" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">JavaScript</text>
+  </g>
+
+  <!-- Inner Diamond: Red Hat (Top) -->
+  <g transform="translate(360, 117)">
+    <animateTransform attributeName="transform" type="translate" values="360,117; 360,110; 360,117" dur="3.8s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(238, 0, 0, 0.08)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/redhat/EE0000" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">Red Hat</text>
+  </g>
+
+  <!-- Inner Diamond: Ubuntu (Bottom) -->
+  <g transform="translate(360, 437)">
+    <animateTransform attributeName="transform" type="translate" values="360,437; 360,444; 360,437" dur="4.5s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(233, 84, 32, 0.08)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/ubuntu/E95420" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">Ubuntu</text>
+  </g>
+
+  <!-- Inner Diamond: Bash (Left) -->
+  <g transform="translate(185, 277)">
+    <animateTransform attributeName="transform" type="translate" values="185,277; 185,272; 185,277" dur="3.5s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(78, 170, 37, 0.08)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/gnubash/4EAA25" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">Bash</text>
+  </g>
+
+  <!-- Inner Diamond: Python (Right) -->
+  <g transform="translate(535, 277)">
+    <animateTransform attributeName="transform" type="translate" values="535,277; 535,282; 535,277" dur="3.9s" repeatCount="indefinite" additive="sum"/>
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="rgba(55, 118, 171, 0.08)" filter="url(#core-glow)" />
+    <rect x="0" y="0" width="130" height="46" rx="23" class="glass-pill" />
+    <image href="https://cdn.simpleicons.org/python/3776AB" x="16" y="11" width="24" height="24" />
+    <text x="50" y="29" class="node-text">Python</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- CENTRAL CORE: LINUX                        -->
+  <!-- ========================================== -->
+  <g transform="translate(350, 274)">
+    <animateTransform attributeName="transform" type="translate" values="350,274; 350,268; 350,274" dur="6s" repeatCount="indefinite" />
+    
+    <!-- Heavy Core Glow -->
+    <rect x="0" y="0" width="150" height="52" rx="26" fill="rgba(0, 229, 255, 0.15)" filter="url(#core-glow)">
+      <animate attributeName="opacity" values="0.6; 1; 0.6" dur="3s" repeatCount="indefinite" />
+    </rect>
+    
+    <!-- Core Glass Body -->
+    <rect x="0" y="0" width="150" height="52" rx="26" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(0, 229, 255, 0.5)" stroke-width="2" />
+    
+    <!-- Icon & Text -->
+    <image href="https://cdn.simpleicons.org/linux/FCC624" x="20" y="12" width="28" height="28" />
+    <text x="60" y="32" class="core-text">Linux</text>
+  </g>
+
 </svg>
