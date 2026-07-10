@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 620" width="100%" height="100%">
+  <defs>
+    <!-- Core Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a0e" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <!-- Glass Panel Gradient -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.05)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.01)" />
+    </linearGradient>
+
+    <!-- Holographic Line Gradient -->
+    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0, 229, 255, 0.5)" />
+      <stop offset="50%" stop-color="rgba(99, 102, 241, 0.5)" />
+      <stop offset="100%" stop-color="rgba(0, 255, 157, 0.5)" />
+    </linearGradient>
+
+    <!-- Vertical Radar Scan Line -->
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0, 229, 255, 0)" />
+      <stop offset="50%" stop-color="rgba(0, 229, 255, 0.15)" />
+      <stop offset="100%" stop-color="rgba(0, 229, 255, 0)" />
+    </linearGradient>
+
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; fill: #ffffff; font-size: 14px; letter-spacing: 2px; }
+      .tech-name { font-family: monospace; font-weight: 600; fill: #00E5FF; font-size: 13px; }
+      .tech-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; fill: #8b949e; font-size: 12px; }
+      .module-border { fill: url(#glass); stroke: rgba(255,255,255,0.1); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- Animated Ambient Glows -->
+  <circle cx="150" cy="150" r="100" fill="rgba(99, 102, 241, 0.15)" filter="blur(40px)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="450" r="120" fill="rgba(0, 229, 255, 0.1)" filter="blur(50px)">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Animated Network Connection Lines Behind Glass -->
+  <path d="M 225 125 L 425 300 L 625 125 M 225 475 L 425 300 L 625 475" fill="none" stroke="url(#line-glow)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.3">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="20s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Animated Scan Line -->
+  <rect width="100%" height="150" fill="url(#scanline)" opacity="0.5">
+    <animate attributeName="y" values="-150;700;-150" dur="10s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- ==================== MODULE 1: LANGUAGES ==================== -->
+  <g transform="translate(40, 40)">
+    <!-- Floating Animation -->
+    <animateTransform attributeName="transform" type="translate" values="40,40; 40,35; 40,40" dur="5s" repeatCount="indefinite" />
+    <rect width="365" height="155" rx="12" class="module-border" />
+    
+    <!-- Status Dot -->
+    <circle cx="25" cy="25" r="4" fill="#00FF9D">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">PROGRAMMING</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name">Python</tspan> <tspan class="tech-desc">— Automation &amp; Sec Scripts</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name">Bash  </tspan> <tspan class="tech-desc">— Core System Scripting</tspan></text>
+    <text x="25" y="135"><tspan class="tech-name">C/C++ </tspan> <tspan class="tech-desc">— Low-level Logic &amp; Memory</tspan></text>
+  </g>
+
+  <!-- ==================== MODULE 2: OS & LINUX ==================== -->
+  <g transform="translate(445, 40)">
+    <animateTransform attributeName="transform" type="translate" values="445,40; 445,45; 445,40" dur="6s" repeatCount="indefinite" />
+    <rect width="365" height="155" rx="12" class="module-border" />
+    
+    <circle cx="25" cy="25" r="4" fill="#6366F1">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">SYSTEMS &amp; OS</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name" fill="#ff5f56">Red Hat</tspan> <tspan class="tech-desc">— RHCSA Certified Admin</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name" fill="#FCC624">Linux  </tspan> <tspan class="tech-desc">— Daily Dev Environment</tspan></text>
+    <text x="25" y="135"><tspan class="tech-name" fill="#E95420">Ubuntu </tspan> <tspan class="tech-desc">— Server &amp; Cloud Operations</tspan></text>
+  </g>
+
+  <!-- ==================== MODULE 3: NETWORKING ==================== -->
+  <g transform="translate(40, 235)">
+    <animateTransform attributeName="transform" type="translate" values="40,235; 40,240; 40,235" dur="5.5s" repeatCount="indefinite" />
+    <rect width="365" height="155" rx="12" class="module-border" />
+    
+    <circle cx="25" cy="25" r="4" fill="#00E5FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">NETWORKING</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name">Fortinet </tspan> <tspan class="tech-desc">— Firewalls &amp; NSE Framework</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name">Wireshark</tspan> <tspan class="tech-desc">— Packet &amp; Traffic Analysis</tspan></text>
+    <text x="25" y="135"><tspan class="tech-name">TCP/IP   </tspan> <tspan class="tech-desc">— Protocol Infrastructure</tspan></text>
+  </g>
+
+  <!-- ==================== MODULE 4: SECURITY TOOLS ==================== -->
+  <g transform="translate(445, 235)">
+    <animateTransform attributeName="transform" type="translate" values="445,235; 445,230; 445,235" dur="6.5s" repeatCount="indefinite" />
+    <rect width="365" height="155" rx="12" class="module-border" />
+    
+    <circle cx="25" cy="25" r="4" fill="#ff5f56">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">SECURITY TOOLING</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name">Zero-Trust</tspan> <tspan class="tech-desc">— Architecture &amp; Identity</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name">AppSec    </tspan> <tspan class="tech-desc">— Static Analysis &amp; Scanning</tspan></text>
+    <text x="25" y="135"><tspan class="tech-name">API Sec   </tspan> <tspan class="tech-desc">— Endpoint Hardening</tspan></text>
+  </g>
+
+  <!-- ==================== MODULE 5: DATABASES ==================== -->
+  <g transform="translate(40, 430)">
+    <animateTransform attributeName="transform" type="translate" values="40,430; 40,425; 40,430" dur="4.5s" repeatCount="indefinite" />
+    <rect width="365" height="140" rx="12" class="module-border" />
+    
+    <circle cx="25" cy="25" r="4" fill="#FCC624">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">DATABASES</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name">MySQL   </tspan> <tspan class="tech-desc">— Relational Architecture</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name">NoSQL   </tspan> <tspan class="tech-desc">— Document-based Storage</tspan></text>
+  </g>
+
+  <!-- ==================== MODULE 6: LEARNING ==================== -->
+  <g transform="translate(445, 430)">
+    <animateTransform attributeName="transform" type="translate" values="445,430; 445,435; 445,430" dur="5.2s" repeatCount="indefinite" />
+    <rect width="365" height="140" rx="12" class="module-border" />
+    
+    <circle cx="25" cy="25" r="4" fill="#00FF9D">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="30" class="title">CURRENTLY EXPANDING</text>
+    <line x1="20" y1="45" x2="345" y2="45" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+
+    <text x="25" y="75"><tspan class="tech-name">Cloud Sec</tspan> <tspan class="tech-desc">— AWS/Azure Infrastructure</tspan></text>
+    <text x="25" y="105"><tspan class="tech-name">Next.js  </tspan> <tspan class="tech-desc">— Secure Web Applications</tspan></text>
+  </g>
+</svg>
